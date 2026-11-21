@@ -1,0 +1,29 @@
+name: Bug Report
+description: Report something that does not work
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report an issue in Whispr. Please do not paste real secrets or private images.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Bug
+      description: What happened, and what did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Include the image type and size, and whether a password was used.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      description: For example, Firefox 130 on Windows 11.
+    validations:
+      required: true
