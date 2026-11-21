@@ -33,7 +33,11 @@ It is an educational and privacy tool. Please read the limits below before relyi
 3. Download the PNG and share it as a file.
 4. On **Decode**, choose that PNG, enter the password if one was set, and reveal the message.
 
-You can also host the `whispr-web` folder on any static host, such as GitHub Pages. Serve it over HTTPS, because WebCrypto needs a secure context (a local file or `localhost` also works).
+You can also host the `whispr-web` folder on any static host, such as GitHub Pages or Vercel. Serve it over HTTPS, because WebCrypto needs a secure context (a local file or `localhost` also works).
+
+### Hosted copy
+
+A hosted copy is available at https://whispr-mythicavalons-projects.vercel.app. It is a convenience. When you use a hosted copy, your browser downloads the code from that host on every visit, so you are trusting the host to serve it unmodified. The page and its response headers block network requests, but the strongest guarantee is to download this repository, review the code and open `whispr-web/index.html` locally.
 
 ## How It Works
 
@@ -87,6 +91,7 @@ whispr/
     index.html        Self-contained page with inline CSS
     whispr-core.js    Encryption and steganography (no DOM, unit tested)
     script.js         UI
+    vercel.json       Security headers for Vercel hosting
   test/               node:test suite for whispr-core.js
   .github/            CI, issue templates, pull request template
 ```
