@@ -1,0 +1,22 @@
+{
+  "name": "whispr",
+  "version": "2.0.0",
+  "description": "Client-side tool that encrypts a message with AES-GCM and hides it in an image using LSB steganography",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "steganography",
+    "lsb",
+    "aes-gcm",
+    "webcrypto",
+    "privacy",
+    "offline"
+  ],
+  "author": "Amal Nair",
+  "license": "MIT"
+}
